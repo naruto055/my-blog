@@ -6,7 +6,7 @@ import { defineConfig, fontProviders } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'http://159.75.45.204',
+	site: 'http://www.naruto-blog.top',
 	output: 'static',
 	integrations: [mdx(), sitemap()],
 	fonts: [
