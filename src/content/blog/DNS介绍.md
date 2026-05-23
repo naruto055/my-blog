@@ -54,7 +54,7 @@ DNS通常运行于UDP协议之上，使用端口53，必要时也会使用TCP
 4. 本地DNS先问根DNS，它告诉我们`.top`该去问谁
 5. 然后本地 DNS 再去问 `.top` 的 TLD DNS（管理 `.top` 这一层的 DNS 服务器），它告诉我们 naruto-blog.top 这个域名的 NS 是谁
 6. 本地DNS去问权威DNS，也就是dm1.longmingdns.com，它保存着naruto-blog.top真实解析记录，naruto-blog.top的ip
-7. 权威DNS返回结果，可能是A记录，也就是 www.naruto-blog.top的ip地址；也有可能返回`CNAME`，再继续查一次
+7. 权威DNS返回结果，可能是A记录，也就是 www.naruto-blog.top 的ip地址；也有可能返回`CNAME`，再继续查一次
 8. 然后本地缓存结果
 9. 浏览器拿着IP去访问服务器，建立TCP/TLS 连接，发送HTTP/HTTPS请求
 
@@ -430,7 +430,6 @@ dig @8.8.8.8 www.baidu.com
 dig @1.1.1.1 www.baidu.com
 dig @114.114.114.114 www.baidu.com
 ```
-
 
 
 
